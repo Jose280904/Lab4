@@ -14,5 +14,14 @@
     heroSection.style.backgroundImage = "url('https://picsum.photos/id/683/1280/720')";
     heroSection.style.backgroundSize = "cover";
     heroSection.style.backgroundPosition = "center";
+
+    const heroButton = document.querySelector("section a");
+    heroButton.remove();
+
+    const nav = document.querySelector("nav");
+    const footer = document.querySelector("footer");
+
+    const footerBg = window.getComputedStyle(footer).backgroundColor;
+    nav.style.backgroundColor = footerBg;
     
 })();
