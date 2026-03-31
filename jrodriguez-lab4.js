@@ -16,14 +16,17 @@
   heroSection.style.backgroundSize = "cover";
   heroSection.style.backgroundPosition = "center";
 
-  const heroButton = document.querySelector("a[href='#contact']");
+  const heroButton = document.querySelector("section a.bg-blue-600");
   if (heroButton) {
     heroButton.remove();
   }
 
-  const nav = document.querySelector("nav");
+  const header = document.querySelector("header");
   const footer = document.querySelector("footer");
   const footerBg = window.getComputedStyle(footer).backgroundColor;
-  nav.style.backgroundColor = footerBg;
+
+  if (header) {
+    header.style.backgroundColor = footerBg;
+  }
 
 })();
