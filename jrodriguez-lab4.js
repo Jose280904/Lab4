@@ -29,4 +29,20 @@
     header.style.backgroundColor = footerBg;
   }
 
+  const serviceIcons = document.querySelectorAll("#services .material-symbols-outlined");
+  serviceIcons.forEach(function (icon) {
+    icon.style.color = "#47C714";
+  });
+
+  const serviceCards = document.querySelectorAll("#services .rounded-lg");
+
+  serviceCards.forEach(function (card) {
+    const title = card.querySelector("h3");
+    const icon = card.querySelector(".material-symbols-outlined");
+
+    if (title && icon && title.textContent.trim() === "Digital Marketing") {
+      icon.textContent = "ads_click";
+    }
+  });
+
 })();
