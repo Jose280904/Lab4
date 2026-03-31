@@ -6,4 +6,8 @@
 
     const heroHeading = document.querySelector("section h1");
     heroHeading.textContent = "Uplift Your Brand with Stellar Marketing";
+
+    const heroParagraph = document.querySelector("section p");
+    heroParagraph.innerHTML = 'Utilize cutting-edge strategies from <strong><em>Stellar Marketing</em></strong> to help your business thrive and excel. ';
+    
 })();
