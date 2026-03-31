@@ -16,14 +16,13 @@
   heroSection.style.backgroundSize = "cover";
   heroSection.style.backgroundPosition = "center";
 
-  const heroButton = document.querySelector("section .inline-block");
+  const heroButton = document.querySelector("a[href='#contact']");
   if (heroButton) {
     heroButton.remove();
   }
 
   const nav = document.querySelector("nav");
   const footer = document.querySelector("footer");
-
   const footerBg = window.getComputedStyle(footer).backgroundColor;
   nav.style.backgroundColor = footerBg;
 
