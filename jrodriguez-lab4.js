@@ -23,5 +23,5 @@
 
     const footerBg = window.getComputedStyle(footer).backgroundColor;
     nav.style.backgroundColor = footerBg;
-    
+
 })();
