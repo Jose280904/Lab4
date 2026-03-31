@@ -46,7 +46,7 @@
   });
 
   const style = document.createElement("style");
-  style.textContent =`
+  style.textContent = `
     @media (min-width: 1024px) {
       #solutions .grid {
         grid-template-columns: repeat(4, 1fr) !important;
@@ -54,4 +54,15 @@
     }
   `;
   document.head.appendChild(style);
+
+  const solutionCards = document.querySelectorAll("#solutions .relative");
+  solutionCards.forEach(function (card) {
+    const title = card.querySelector("h3");
+    const img = card.querySelector("img");
+    if (title && img && title.textContent.trim() === "Musicians") {
+      img.src = "https://picsum.photos/id/453/400/300";
+      img.alt = "Musicians marketing solution";
+    }
+  });
+
 })();
